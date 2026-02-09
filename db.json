@@ -1,0 +1,460 @@
+{
+  "stats": {
+    "7d": {
+      "all": {
+        "totalRevenue": { "value": 8450, "change": 15.3, "isPositive": true },
+        "totalUsers": { "value": 89, "change": 12.1, "isPositive": true },
+        "orders": { "value": 45, "change": 8.5, "isPositive": true },
+        "conversionRate": { "value": 5.2, "change": 2.1, "isPositive": true }
+      },
+      "free": {
+        "totalRevenue": { "value": 0, "change": 0, "isPositive": true },
+        "totalUsers": { "value": 58, "change": 18.2, "isPositive": true },
+        "orders": { "value": 0, "change": 0, "isPositive": true },
+        "conversionRate": { "value": 0, "change": 0, "isPositive": true }
+      },
+      "premium": {
+        "totalRevenue": { "value": 5890, "change": 14.8, "isPositive": true },
+        "totalUsers": { "value": 24, "change": 9.1, "isPositive": true },
+        "orders": { "value": 32, "change": 11.2, "isPositive": true },
+        "conversionRate": { "value": 6.8, "change": 3.2, "isPositive": true }
+      },
+      "enterprise": {
+        "totalRevenue": { "value": 2560, "change": 16.5, "isPositive": true },
+        "totalUsers": { "value": 7, "change": 0, "isPositive": true },
+        "orders": { "value": 13, "change": 8.3, "isPositive": true },
+        "conversionRate": { "value": 7.5, "change": 1.8, "isPositive": true }
+      }
+    },
+    "30d": {
+      "all": {
+        "totalRevenue": { "value": 32180, "change": 10.5, "isPositive": true },
+        "totalUsers": { "value": 342, "change": 7.8, "isPositive": true },
+        "orders": { "value": 178, "change": 5.2, "isPositive": true },
+        "conversionRate": { "value": 4.8, "change": 1.5, "isPositive": true }
+      },
+      "free": {
+        "totalRevenue": { "value": 0, "change": 0, "isPositive": true },
+        "totalUsers": { "value": 215, "change": 12.3, "isPositive": true },
+        "orders": { "value": 0, "change": 0, "isPositive": true },
+        "conversionRate": { "value": 0, "change": 0, "isPositive": true }
+      },
+      "premium": {
+        "totalRevenue": { "value": 22340, "change": 9.8, "isPositive": true },
+        "totalUsers": { "value": 98, "change": 6.5, "isPositive": true },
+        "orders": { "value": 125, "change": 7.1, "isPositive": true },
+        "conversionRate": { "value": 6.2, "change": 2.3, "isPositive": true }
+      },
+      "enterprise": {
+        "totalRevenue": { "value": 9840, "change": 11.2, "isPositive": true },
+        "totalUsers": { "value": 29, "change": 3.6, "isPositive": true },
+        "orders": { "value": 53, "change": 4.8, "isPositive": true },
+        "conversionRate": { "value": 7.1, "change": 1.9, "isPositive": true }
+      }
+    },
+    "12m": {
+      "all": {
+        "totalRevenue": { "value": 354230, "change": 12.5, "isPositive": true },
+        "totalUsers": { "value": 1245, "change": 8.2, "isPositive": true },
+        "orders": { "value": 842, "change": -3.1, "isPositive": false },
+        "conversionRate": { "value": 4.3, "change": 1.2, "isPositive": true }
+      },
+      "free": {
+        "totalRevenue": { "value": 0, "change": 0, "isPositive": true },
+        "totalUsers": { "value": 650, "change": 15.8, "isPositive": true },
+        "orders": { "value": 0, "change": 0, "isPositive": true },
+        "conversionRate": { "value": 0, "change": 0, "isPositive": true }
+      },
+      "premium": {
+        "totalRevenue": { "value": 245890, "change": 11.3, "isPositive": true },
+        "totalUsers": { "value": 420, "change": 5.7, "isPositive": true },
+        "orders": { "value": 589, "change": -2.8, "isPositive": false },
+        "conversionRate": { "value": 5.8, "change": 1.8, "isPositive": true }
+      },
+      "enterprise": {
+        "totalRevenue": { "value": 108340, "change": 14.2, "isPositive": true },
+        "totalUsers": { "value": 175, "change": 3.2, "isPositive": true },
+        "orders": { "value": 253, "change": -4.5, "isPositive": false },
+        "conversionRate": { "value": 6.5, "change": 0.9, "isPositive": true }
+      }
+    }
+  },
+  "revenue": {
+    "7d": {
+      "all": [{ "month": "Last 7 Days", "value": 8450 }],
+      "free": [{ "month": "Last 7 Days", "value": 0 }],
+      "premium": [{ "month": "Last 7 Days", "value": 5890 }],
+      "enterprise": [{ "month": "Last 7 Days", "value": 2560 }]
+    },
+    "30d": {
+      "all": [{ "month": "Last 30 Days", "value": 32180 }],
+      "free": [{ "month": "Last 30 Days", "value": 0 }],
+      "premium": [{ "month": "Last 30 Days", "value": 22340 }],
+      "enterprise": [{ "month": "Last 30 Days", "value": 9840 }]
+    },
+    "12m": {
+      "all": [
+        { "month": "Jan", "value": 23200 },
+        { "month": "Feb", "value": 28100 },
+        { "month": "Mar", "value": 25800 },
+        { "month": "Apr", "value": 31200 },
+        { "month": "May", "value": 35100 },
+        { "month": "Jun", "value": 29800 },
+        { "month": "Jul", "value": 38200 },
+        { "month": "Aug", "value": 32800 },
+        { "month": "Sep", "value": 36500 },
+        { "month": "Oct", "value": 40200 },
+        { "month": "Nov", "value": 37800 },
+        { "month": "Dec", "value": 45530 }
+      ],
+      "free": [
+        { "month": "Jan", "value": 0 },
+        { "month": "Feb", "value": 0 },
+        { "month": "Mar", "value": 0 },
+        { "month": "Apr", "value": 0 },
+        { "month": "May", "value": 0 },
+        { "month": "Jun", "value": 0 },
+        { "month": "Jul", "value": 0 },
+        { "month": "Aug", "value": 0 },
+        { "month": "Sep", "value": 0 },
+        { "month": "Oct", "value": 0 },
+        { "month": "Nov", "value": 0 },
+        { "month": "Dec", "value": 0 }
+      ],
+      "premium": [
+        { "month": "Jan", "value": 16100 },
+        { "month": "Feb", "value": 19500 },
+        { "month": "Mar", "value": 17900 },
+        { "month": "Apr", "value": 21600 },
+        { "month": "May", "value": 24300 },
+        { "month": "Jun", "value": 20600 },
+        { "month": "Jul", "value": 26400 },
+        { "month": "Aug", "value": 22700 },
+        { "month": "Sep", "value": 25200 },
+        { "month": "Oct", "value": 27800 },
+        { "month": "Nov", "value": 26100 },
+        { "month": "Dec", "value": 31490 }
+      ],
+      "enterprise": [
+        { "month": "Jan", "value": 7100 },
+        { "month": "Feb", "value": 8600 },
+        { "month": "Mar", "value": 7900 },
+        { "month": "Apr", "value": 9600 },
+        { "month": "May", "value": 10800 },
+        { "month": "Jun", "value": 9200 },
+        { "month": "Jul", "value": 11800 },
+        { "month": "Aug", "value": 10100 },
+        { "month": "Sep", "value": 11300 },
+        { "month": "Oct", "value": 12400 },
+        { "month": "Nov", "value": 11700 },
+        { "month": "Dec", "value": 14040 }
+      ]
+    }
+  },
+  "orders": {
+    "7d": {
+      "all": [{ "month": "Last 7 Days", "value": 45 }],
+      "free": [{ "month": "Last 7 Days", "value": 0 }],
+      "premium": [{ "month": "Last 7 Days", "value": 32 }],
+      "enterprise": [{ "month": "Last 7 Days", "value": 13 }]
+    },
+    "30d": {
+      "all": [{ "month": "Last 30 Days", "value": 178 }],
+      "free": [{ "month": "Last 30 Days", "value": 0 }],
+      "premium": [{ "month": "Last 30 Days", "value": 125 }],
+      "enterprise": [{ "month": "Last 30 Days", "value": 53 }]
+    },
+    "12m": {
+      "all": [
+        { "month": "Jan", "value": 62 },
+        { "month": "Feb", "value": 78 },
+        { "month": "Mar", "value": 65 },
+        { "month": "Apr", "value": 82 },
+        { "month": "May", "value": 88 },
+        { "month": "Jun", "value": 75 },
+        { "month": "Jul", "value": 92 },
+        { "month": "Aug", "value": 79 },
+        { "month": "Sep", "value": 85 },
+        { "month": "Oct", "value": 98 },
+        { "month": "Nov", "value": 86 },
+        { "month": "Dec", "value": 102 }
+      ],
+      "free": [
+        { "month": "Jan", "value": 0 },
+        { "month": "Feb", "value": 0 },
+        { "month": "Mar", "value": 0 },
+        { "month": "Apr", "value": 0 },
+        { "month": "May", "value": 0 },
+        { "month": "Jun", "value": 0 },
+        { "month": "Jul", "value": 0 },
+        { "month": "Aug", "value": 0 },
+        { "month": "Sep", "value": 0 },
+        { "month": "Oct", "value": 0 },
+        { "month": "Nov", "value": 0 },
+        { "month": "Dec", "value": 0 }
+      ],
+      "premium": [
+        { "month": "Jan", "value": 43 },
+        { "month": "Feb", "value": 54 },
+        { "month": "Mar", "value": 45 },
+        { "month": "Apr", "value": 57 },
+        { "month": "May", "value": 61 },
+        { "month": "Jun", "value": 52 },
+        { "month": "Jul", "value": 64 },
+        { "month": "Aug", "value": 55 },
+        { "month": "Sep", "value": 59 },
+        { "month": "Oct", "value": 68 },
+        { "month": "Nov", "value": 60 },
+        { "month": "Dec", "value": 71 }
+      ],
+      "enterprise": [
+        { "month": "Jan", "value": 19 },
+        { "month": "Feb", "value": 24 },
+        { "month": "Mar", "value": 20 },
+        { "month": "Apr", "value": 25 },
+        { "month": "May", "value": 27 },
+        { "month": "Jun", "value": 23 },
+        { "month": "Jul", "value": 28 },
+        { "month": "Aug", "value": 24 },
+        { "month": "Sep", "value": 26 },
+        { "month": "Oct", "value": 30 },
+        { "month": "Nov", "value": 26 },
+        { "month": "Dec", "value": 31 }
+      ]
+    }
+  },
+  "users": {
+    "distribution": [
+      { "name": "Free", "value": 650, "color": "#94a3b8" },
+      { "name": "Premium", "value": 420, "color": "#3b82f6" },
+      { "name": "Enterprise", "value": 175, "color": "#8b5cf6" }
+    ]
+  },
+  "traffic": [
+    { "source": "Organic", "value": 45, "color": "#10b981" },
+    { "source": "Paid", "value": 25, "color": "#f59e0b" },
+    { "source": "Social", "value": 20, "color": "#3b82f6" },
+    { "source": "Referral", "value": 10, "color": "#8b5cf6" }
+  ]
+}
+,
+  "usersList": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "role": "Admin",
+      "status": "Active",
+      "plan": "Enterprise",
+      "lastActive": "2024-02-10T10:30:00Z",
+      "avatar": "JD"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "role": "Manager",
+      "status": "Active",
+      "plan": "Premium",
+ 
+,
+  "usersList": [
+    {
+      "id": "1",
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "role": "Admin",
+      "status": "Active",
+      "plan": "Enterprise",
+      "lastActive": "2024-02-10T10:30:00Z",
+      "avatar": "JS"
+    },
+    {
+      "id": "2",
+      "name": "Sarah Johnson",
+      "email": "sarah.j@example.com",
+      "role": "Manager",
+      "status": "Active",
+      "plan": "Premium",
+      "lastActive": "2024-02-10T09:15:00Z",
+      "avatar": "SJ"
+    },
+    {
+      "id": "3",
+      "name": "Michael Brown",
+      "email": "m.brown@example.com",
+      "role": "User",
+      "status": "Active",
+      "plan": "Free",
+      "lastActive": "2024-02-09T16:45:00Z",
+      "avatar": "MB"
+    },
+    {
+      "id": "4",
+      "name": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "role": "Manager",
+      "status": "Active",
+      "plan": "Premium",
+      "lastActive": "2024-02-10T08:20:00Z",
+      "avatar": "ED"
+    },
+    {
+      "id": "5",
+      "name": "David Wilson",
+      "email": "d.wilson@example.com",
+      "role": "User",
+      "status": "Inactive",
+      "plan": "Free",
+      "lastActive": "2024-02-05T14:30:00Z",
+      "avatar": "DW"
+    },
+    {
+      "id": "6",
+      "name": "Lisa Anderson",
+      "email": "lisa.a@example.com",
+      "role": "Admin",
+      "status": "Active",
+      "plan": "Enterprise",
+      "lastActive": "2024-02-10T11:00:00Z",
+      "avatar": "LA"
+    },
+    {
+      "id": "7",
+      "name": "James Taylor",
+      "email": "james.t@example.com",
+      "role": "User",
+      "status": "Pending",
+      "plan": "Premium",
+      "lastActive": "2024-02-08T13:15:00Z",
+      "avatar": "JT"
+    },
+    {
+      "id": "8",
+      "name": "Jennifer Martinez",
+      "email": "j.martinez@example.com",
+      "role": "Manager",
+      "status": "Active",
+      "plan": "Premium",
+      "lastActive": "2024-02-10T07:45:00Z",
+      "avatar": "JM"
+    }
+  ],
+  "ordersList": [
+    {
+      "id": "ORD-1001",
+      "customer": "John Smith",
+      "email": "john.smith@example.com",
+      "product": "Premium Plan - Annual",
+      "amount": 299,
+      "status": "Completed",
+      "date": "2024-02-10T09:30:00Z",
+      "paymentMethod": "Credit Card"
+    },
+    {
+      "id": "ORD-1002",
+      "customer": "Sarah Johnson",
+      "email": "sarah.j@example.com",
+      "product": "Enterprise Plan - Monthly",
+      "amount": 499,
+      "status": "Processing",
+      "date": "2024-02-10T08:15:00Z",
+      "paymentMethod": "PayPal"
+    },
+    {
+      "id": "ORD-1003",
+      "customer": "Michael Brown",
+      "email": "m.brown@example.com",
+      "product": "Basic Plan - Monthly",
+      "amount": 29,
+      "status": "Completed",
+      "date": "2024-02-09T16:20:00Z",
+      "paymentMethod": "Credit Card"
+    },
+    {
+      "id": "ORD-1004",
+      "customer": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "product": "Premium Plan - Monthly",
+      "amount": 99,
+      "status": "Pending",
+      "date": "2024-02-09T14:45:00Z",
+      "paymentMethod": "Credit Card"
+    },
+    {
+      "id": "ORD-1005",
+      "customer": "David Wilson",
+      "email": "d.wilson@example.com",
+      "product": "Basic Plan - Annual",
+      "amount": 199,
+      "status": "Cancelled",
+      "date": "2024-02-08T11:30:00Z",
+      "paymentMethod": "PayPal"
+    },
+    {
+      "id": "ORD-1006",
+      "customer": "Lisa Anderson",
+      "email": "lisa.a@example.com",
+      "product": "Enterprise Plan - Annual",
+      "amount": 4999,
+      "status": "Completed",
+      "date": "2024-02-08T10:00:00Z",
+      "paymentMethod": "Credit Card"
+    },
+    {
+      "id": "ORD-1007",
+      "customer": "James Taylor",
+      "email": "james.t@example.com",
+      "product": "Premium Plan - Monthly",
+      "amount": 99,
+      "status": "Processing",
+      "date": "2024-02-07T15:20:00Z",
+      "paymentMethod": "Credit Card"
+    },
+    {
+      "id": "ORD-1008",
+      "customer": "Jennifer Martinez",
+      "email": "j.martinez@example.com",
+      "product": "Premium Plan - Annual",
+      "amount": 299,
+      "status": "Completed",
+      "date": "2024-02-07T09:45:00Z",
+      "paymentMethod": "PayPal"
+    }
+  ],
+  "activities": [
+    {
+      "id": "1",
+      "type": "order",
+      "message": "New order received from John Smith",
+      "amount": 299,
+      "time": "2 hours ago"
+    },
+    {
+      "id": "2",
+      "type": "user",
+      "message": "New user registered: Sarah Johnson",
+      "time": "3 hours ago"
+    },
+    {
+      "id": "3",
+      "type": "order",
+      "message": "Order completed for Michael Brown",
+      "amount": 29,
+      "time": "5 hours ago"
+    },
+    {
+      "id": "4",
+      "type": "alert",
+      "message": "System maintenance scheduled for tonight",
+      "time": "6 hours ago"
+    },
+    {
+      "id": "5",
+      "type": "order",
+      "message": "Payment received from Emily Davis",
+      "amount": 99,
+      "time": "8 hours ago"
+    }
+  ]
+}
