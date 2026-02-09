@@ -1,0 +1,35 @@
+{
+  "name": "admin-analytics-dashboard",
+  "version": "1.0.0",
+  "description": "A responsive, production-ready Admin Analytics Dashboard built with Next.js, TypeScript, Tailwind CSS, and Recharts",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"next dev\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "server": "json-server db.json --port 3001"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "clsx": "^2.1.1",
+    "json-server": "^1.0.0-beta.3",
+    "lucide-react": "^0.475.0",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.1",
+    "tailwind-merge": "^3.0.1",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
+  }
+}
