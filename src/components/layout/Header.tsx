@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { Bell, Menu, Moon, Sun, User, LogOut, Settings, Download } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useSidebarStore } from '@/stores/sidebarStore';
@@ -15,6 +16,12 @@ export function Header() {
   const { toggleMobile } = useSidebarStore();
   const { theme, toggleTheme } = useThemeStore();
   const { isLoading } = useDashboardStore();
+  const [unreadCount, setUnreadCount] = useState(3);
+
+  const handleNotificationClick = () => {
+    // Mark all notifications as read
+    setUnreadCount(0);
+  };
 
   const handleLogout = () => {
     // Clear any auth tokens/session data here
@@ -92,11 +99,18 @@ export function Header() {
         {/* Notifications */}
         <Dropdown
           trigger={
-            <Button variant="ghost" size="icon" className="relative">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="relative"
+              onClick={handleNotificationClick}
+            >
               <Bell className="h-5 w-5" />
-              <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-destructive text-[10px] font-medium text-destructive-foreground">
-                3
-              </span>
+              {unreadCount > 0 && (
+                <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-destructive text-[10px] font-medium text-destructive-foreground">
+                  {unreadCount}
+                </span>
+              )}
             </Button>
           }
           align="right"
