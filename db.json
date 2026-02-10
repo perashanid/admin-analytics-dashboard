@@ -105,16 +105,68 @@
   },
   "revenue": {
     "7d": {
-      "all": [{ "month": "Last 7 Days", "value": 8450 }],
-      "free": [{ "month": "Last 7 Days", "value": 0 }],
-      "premium": [{ "month": "Last 7 Days", "value": 5890 }],
-      "enterprise": [{ "month": "Last 7 Days", "value": 2560 }]
+      "all": [
+        { "month": "Mon", "value": 1100 },
+        { "month": "Tue", "value": 1350 },
+        { "month": "Wed", "value": 1200 },
+        { "month": "Thu", "value": 980 },
+        { "month": "Fri", "value": 1450 },
+        { "month": "Sat", "value": 1520 },
+        { "month": "Sun", "value": 850 }
+      ],
+      "free": [
+        { "month": "Mon", "value": 0 },
+        { "month": "Tue", "value": 0 },
+        { "month": "Wed", "value": 0 },
+        { "month": "Thu", "value": 0 },
+        { "month": "Fri", "value": 0 },
+        { "month": "Sat", "value": 0 },
+        { "month": "Sun", "value": 0 }
+      ],
+      "premium": [
+        { "month": "Mon", "value": 750 },
+        { "month": "Tue", "value": 920 },
+        { "month": "Wed", "value": 840 },
+        { "month": "Thu", "value": 680 },
+        { "month": "Fri", "value": 1020 },
+        { "month": "Sat", "value": 1080 },
+        { "month": "Sun", "value": 600 }
+      ],
+      "enterprise": [
+        { "month": "Mon", "value": 350 },
+        { "month": "Tue", "value": 430 },
+        { "month": "Wed", "value": 360 },
+        { "month": "Thu", "value": 300 },
+        { "month": "Fri", "value": 430 },
+        { "month": "Sat", "value": 440 },
+        { "month": "Sun", "value": 250 }
+      ]
     },
     "30d": {
-      "all": [{ "month": "Last 30 Days", "value": 32180 }],
-      "free": [{ "month": "Last 30 Days", "value": 0 }],
-      "premium": [{ "month": "Last 30 Days", "value": 22340 }],
-      "enterprise": [{ "month": "Last 30 Days", "value": 9840 }]
+      "all": [
+        { "month": "Week 1", "value": 7200 },
+        { "month": "Week 2", "value": 8100 },
+        { "month": "Week 3", "value": 7800 },
+        { "month": "Week 4", "value": 9080 }
+      ],
+      "free": [
+        { "month": "Week 1", "value": 0 },
+        { "month": "Week 2", "value": 0 },
+        { "month": "Week 3", "value": 0 },
+        { "month": "Week 4", "value": 0 }
+      ],
+      "premium": [
+        { "month": "Week 1", "value": 5040 },
+        { "month": "Week 2", "value": 5670 },
+        { "month": "Week 3", "value": 5460 },
+        { "month": "Week 4", "value": 6170 }
+      ],
+      "enterprise": [
+        { "month": "Week 1", "value": 2160 },
+        { "month": "Week 2", "value": 2430 },
+        { "month": "Week 3", "value": 2340 },
+        { "month": "Week 4", "value": 2910 }
+      ]
     },
     "12m": {
       "all": [
@@ -177,16 +229,68 @@
   },
   "orders": {
     "7d": {
-      "all": [{ "month": "Last 7 Days", "value": 45 }],
-      "free": [{ "month": "Last 7 Days", "value": 0 }],
-      "premium": [{ "month": "Last 7 Days", "value": 32 }],
-      "enterprise": [{ "month": "Last 7 Days", "value": 13 }]
+      "all": [
+        { "month": "Mon", "value": 5 },
+        { "month": "Tue", "value": 8 },
+        { "month": "Wed", "value": 6 },
+        { "month": "Thu", "value": 4 },
+        { "month": "Fri", "value": 9 },
+        { "month": "Sat", "value": 7 },
+        { "month": "Sun", "value": 6 }
+      ],
+      "free": [
+        { "month": "Mon", "value": 0 },
+        { "month": "Tue", "value": 0 },
+        { "month": "Wed", "value": 0 },
+        { "month": "Thu", "value": 0 },
+        { "month": "Fri", "value": 0 },
+        { "month": "Sat", "value": 0 },
+        { "month": "Sun", "value": 0 }
+      ],
+      "premium": [
+        { "month": "Mon", "value": 4 },
+        { "month": "Tue", "value": 6 },
+        { "month": "Wed", "value": 4 },
+        { "month": "Thu", "value": 3 },
+        { "month": "Fri", "value": 6 },
+        { "month": "Sat", "value": 5 },
+        { "month": "Sun", "value": 4 }
+      ],
+      "enterprise": [
+        { "month": "Mon", "value": 1 },
+        { "month": "Tue", "value": 2 },
+        { "month": "Wed", "value": 2 },
+        { "month": "Thu", "value": 1 },
+        { "month": "Fri", "value": 3 },
+        { "month": "Sat", "value": 2 },
+        { "month": "Sun", "value": 2 }
+      ]
     },
     "30d": {
-      "all": [{ "month": "Last 30 Days", "value": 178 }],
-      "free": [{ "month": "Last 30 Days", "value": 0 }],
-      "premium": [{ "month": "Last 30 Days", "value": 125 }],
-      "enterprise": [{ "month": "Last 30 Days", "value": 53 }]
+      "all": [
+        { "month": "Week 1", "value": 38 },
+        { "month": "Week 2", "value": 45 },
+        { "month": "Week 3", "value": 42 },
+        { "month": "Week 4", "value": 53 }
+      ],
+      "free": [
+        { "month": "Week 1", "value": 0 },
+        { "month": "Week 2", "value": 0 },
+        { "month": "Week 3", "value": 0 },
+        { "month": "Week 4", "value": 0 }
+      ],
+      "premium": [
+        { "month": "Week 1", "value": 27 },
+        { "month": "Week 2", "value": 32 },
+        { "month": "Week 3", "value": 29 },
+        { "month": "Week 4", "value": 37 }
+      ],
+      "enterprise": [
+        { "month": "Week 1", "value": 11 },
+        { "month": "Week 2", "value": 13 },
+        { "month": "Week 3", "value": 13 },
+        { "month": "Week 4", "value": 16 }
+      ]
     },
     "12m": {
       "all": [
