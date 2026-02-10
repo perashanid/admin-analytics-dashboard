@@ -260,7 +260,7 @@ export default function AnalyticsPage() {
                     paddingAngle={5}
                     dataKey="value"
                   >
-                    {devices.map((entry, index) => (
+                    {devices.map((entry: any, index: number) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
                     ))}
                   </Pie>
@@ -269,7 +269,7 @@ export default function AnalyticsPage() {
               </ResponsiveContainer>
             </div>
             <div className="flex justify-center gap-6 mt-4">
-              {devices.map((device) => (
+              {devices.map((device: any) => (
                 <div key={device.name} className="flex items-center gap-2">
                   <div
                     className="w-3 h-3 rounded-full"
@@ -312,7 +312,7 @@ export default function AnalyticsPage() {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              {topProducts.map((product, index) => (
+              {topProducts.map((product: any, index: number) => (
                 <div
                   key={product.name}
                   className="flex items-center justify-between p-3 rounded-lg bg-muted/50"
