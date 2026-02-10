@@ -458,5 +458,117 @@
       "amount": 99,
       "time": "8 hours ago"
     }
-  ]
+  ],
+  "analytics": {
+    "7d": {
+      "overview": {
+        "visitors": { "value": 12450, "change": 18.2, "isPositive": true },
+        "conversions": { "value": 875, "change": 12.5, "isPositive": true },
+        "avgOrderValue": { "value": 158.50, "change": -3.2, "isPositive": false },
+        "bounceRate": { "value": 42.3, "change": -5.1, "isPositive": true }
+      },
+      "performance": [
+        { "day": "Mon", "visitors": 1200, "conversions": 80, "revenue": 2400 },
+        { "day": "Tue", "visitors": 1500, "conversions": 95, "revenue": 3200 },
+        { "day": "Wed", "visitors": 1800, "conversions": 120, "revenue": 4100 },
+        { "day": "Thu", "visitors": 1400, "conversions": 85, "revenue": 2800 },
+        { "day": "Fri", "visitors": 2000, "conversions": 150, "revenue": 5200 },
+        { "day": "Sat", "visitors": 2400, "conversions": 180, "revenue": 6100 },
+        { "day": "Sun", "visitors": 2200, "conversions": 165, "revenue": 5800 }
+      ],
+      "devices": [
+        { "name": "Desktop", "value": 55, "color": "#3b82f6" },
+        { "name": "Mobile", "value": 35, "color": "#8b5cf6" },
+        { "name": "Tablet", "value": 10, "color": "#10b981" }
+      ],
+      "browsers": [
+        { "name": "Chrome", "users": 4500 },
+        { "name": "Safari", "users": 2800 },
+        { "name": "Firefox", "users": 1200 },
+        { "name": "Edge", "users": 800 },
+        { "name": "Other", "users": 400 }
+      ],
+      "topProducts": [
+        { "name": "Premium Plan", "sales": 245, "revenue": 24355, "growth": 12.5 },
+        { "name": "Basic Plan", "sales": 189, "revenue": 5661, "growth": -5.2 },
+        { "name": "Enterprise", "sales": 124, "revenue": 37124, "growth": 28.4 },
+        { "name": "Pro Plan", "sales": 98, "revenue": 9702, "growth": 8.1 },
+        { "name": "Starter", "sales": 76, "revenue": 2274, "growth": -12.3 }
+      ]
+    },
+    "30d": {
+      "overview": {
+        "visitors": { "value": 36600, "change": 15.8, "isPositive": true },
+        "conversions": { "value": 2270, "change": 10.2, "isPositive": true },
+        "avgOrderValue": { "value": 165.20, "change": 2.8, "isPositive": true },
+        "bounceRate": { "value": 39.5, "change": -7.3, "isPositive": true }
+      },
+      "performance": [
+        { "day": "Week 1", "visitors": 8500, "conversions": 520, "revenue": 18400 },
+        { "day": "Week 2", "visitors": 9200, "conversions": 580, "revenue": 21200 },
+        { "day": "Week 3", "visitors": 8800, "conversions": 545, "revenue": 19800 },
+        { "day": "Week 4", "visitors": 10100, "conversions": 625, "revenue": 24600 }
+      ],
+      "devices": [
+        { "name": "Desktop", "value": 58, "color": "#3b82f6" },
+        { "name": "Mobile", "value": 32, "color": "#8b5cf6" },
+        { "name": "Tablet", "value": 10, "color": "#10b981" }
+      ],
+      "browsers": [
+        { "name": "Chrome", "users": 18500 },
+        { "name": "Safari", "users": 10200 },
+        { "name": "Firefox", "users": 4800 },
+        { "name": "Edge", "users": 2400 },
+        { "name": "Other", "users": 700 }
+      ],
+      "topProducts": [
+        { "name": "Premium Plan", "sales": 892, "revenue": 89200, "growth": 15.2 },
+        { "name": "Enterprise", "sales": 456, "revenue": 136800, "growth": 22.8 },
+        { "name": "Basic Plan", "sales": 678, "revenue": 20340, "growth": -2.5 },
+        { "name": "Pro Plan", "sales": 345, "revenue": 34500, "growth": 9.7 },
+        { "name": "Starter", "sales": 234, "revenue": 7020, "growth": -8.3 }
+      ]
+    },
+    "12m": {
+      "overview": {
+        "visitors": { "value": 480000, "change": 22.5, "isPositive": true },
+        "conversions": { "value": 29200, "change": 18.7, "isPositive": true },
+        "avgOrderValue": { "value": 172.80, "change": 5.4, "isPositive": true },
+        "bounceRate": { "value": 36.8, "change": -9.2, "isPositive": true }
+      },
+      "performance": [
+        { "day": "Jan", "visitors": 32000, "conversions": 1850, "revenue": 68000 },
+        { "day": "Feb", "visitors": 35000, "conversions": 2100, "revenue": 78000 },
+        { "day": "Mar", "visitors": 33500, "conversions": 1950, "revenue": 72000 },
+        { "day": "Apr", "visitors": 38000, "conversions": 2300, "revenue": 86000 },
+        { "day": "May", "visitors": 41000, "conversions": 2500, "revenue": 95000 },
+        { "day": "Jun", "visitors": 39000, "conversions": 2350, "revenue": 88000 },
+        { "day": "Jul", "visitors": 43000, "conversions": 2650, "revenue": 102000 },
+        { "day": "Aug", "visitors": 40000, "conversions": 2400, "revenue": 92000 },
+        { "day": "Sep", "visitors": 42000, "conversions": 2550, "revenue": 98000 },
+        { "day": "Oct", "visitors": 45000, "conversions": 2800, "revenue": 108000 },
+        { "day": "Nov", "visitors": 44000, "conversions": 2700, "revenue": 104000 },
+        { "day": "Dec", "visitors": 48000, "conversions": 3000, "revenue": 118000 }
+      ],
+      "devices": [
+        { "name": "Desktop", "value": 52, "color": "#3b82f6" },
+        { "name": "Mobile", "value": 38, "color": "#8b5cf6" },
+        { "name": "Tablet", "value": 10, "color": "#10b981" }
+      ],
+      "browsers": [
+        { "name": "Chrome", "users": 245000 },
+        { "name": "Safari", "users": 135000 },
+        { "name": "Firefox", "users": 58000 },
+        { "name": "Edge", "users": 32000 },
+        { "name": "Other", "users": 10000 }
+      ],
+      "topProducts": [
+        { "name": "Premium Plan", "sales": 10450, "revenue": 1045000, "growth": 18.5 },
+        { "name": "Enterprise", "sales": 5280, "revenue": 1584000, "growth": 25.3 },
+        { "name": "Basic Plan", "sales": 7890, "revenue": 236700, "growth": 3.2 },
+        { "name": "Pro Plan", "sales": 4120, "revenue": 412000, "growth": 12.8 },
+        { "name": "Starter", "sales": 2850, "revenue": 85500, "growth": -5.7 }
+      ]
+    }
+  }
 }

@@ -33,59 +33,39 @@ import {
   Cell,
 } from 'recharts';
 import { api } from '@/lib/api';
-
-// Mock data for detailed analytics
-const performanceData = [
-  { day: 'Mon', visitors: 1200, conversions: 80, revenue: 2400 },
-  { day: 'Tue', visitors: 1500, conversions: 95, revenue: 3200 },
-  { day: 'Wed', visitors: 1800, conversions: 120, revenue: 4100 },
-  { day: 'Thu', visitors: 1400, conversions: 85, revenue: 2800 },
-  { day: 'Fri', visitors: 2000, conversions: 150, revenue: 5200 },
-  { day: 'Sat', visitors: 2400, conversions: 180, revenue: 6100 },
-  { day: 'Sun', visitors: 2200, conversions: 165, revenue: 5800 },
-];
-
-const deviceData = [
-  { name: 'Desktop', value: 55, color: '#3b82f6' },
-  { name: 'Mobile', value: 35, color: '#8b5cf6' },
-  { name: 'Tablet', value: 10, color: '#10b981' },
-];
-
-const browserData = [
-  { name: 'Chrome', users: 4500 },
-  { name: 'Safari', users: 2800 },
-  { name: 'Firefox', users: 1200 },
-  { name: 'Edge', users: 800 },
-  { name: 'Other', users: 400 },
-];
-
-const topProducts = [
-  { name: 'Premium Plan', sales: 245, revenue: 24355, growth: 12.5 },
-  { name: 'Basic Plan', sales: 189, revenue: 5661, growth: -5.2 },
-  { name: 'Enterprise', sales: 124, revenue: 37124, growth: 28.4 },
-  { name: 'Pro Plan', sales: 98, revenue: 9702, growth: 8.1 },
-  { name: 'Starter', sales: 76, revenue: 2274, growth: -12.3 },
-];
+import { useDashboardStore } from '@/stores/dashboardStore';
+import { DateRange } from '@/types';
+import { cn } from '@/lib/utils';
 
 export default function AnalyticsPage() {
-  const [revenue, setRevenue] = useState<any[]>([]);
-  const [userDistribution, setUserDistribution] = useState<any[]>([]);
+  const { dateRange, setDateRange } = useDashboardStore();
+  const [analyticsData, setAnalyticsData] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
       try {
-        const [revenueData, userData] = await Promise.all([
-          api.getRevenue(),
-          api.getUserDistribution(),
-        ]);
-        setRevenue(revenueData);
-        setUserDistribution(userData);
+        const data = await api.getAnalytics(dateRange);
+        setAnalyticsData(data);
       } catch (error) {
         console.error('Failed to fetch analytics data:', error);
+      } finally {
+        setLoading(false);
       }
     };
     fetchData();
-  }, []);
+  }, [dateRange]);
+
+  if (loading || !analyticsData) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="h-12 w-12 animate-spin rounded-full border-4 border-primary border-t-transparent" />
+      </div>
+    );
+  }
+
+  const { overview, performance, devices, browsers, topProducts } = analyticsData;
 
   return (
     <div className="space-y-6">
@@ -99,11 +79,14 @@ export default function AnalyticsPage() {
         </div>
         <div className="flex items-center gap-2">
           <Calendar className="h-4 w-4 text-muted-foreground" />
-          <select className="h-10 rounded-md border border-input bg-background px-3 py-2 text-sm">
-            <option>Last 7 days</option>
-            <option>Last 30 days</option>
-            <option>Last 3 months</option>
-            <option>Last year</option>
+          <select 
+            value={dateRange}
+            onChange={(e) => setDateRange(e.target.value as DateRange)}
+            className="h-10 rounded-md border border-input bg-background px-3 py-2 text-sm"
+          >
+            <option value="7d">Last 7 days</option>
+            <option value="30d">Last 30 days</option>
+            <option value="12m">Last 12 months</option>
           </select>
         </div>
       </div>
@@ -115,10 +98,17 @@ export default function AnalyticsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">Total Visitors</p>
-                <p className="text-2xl font-bold">12,450</p>
-                <div className="flex items-center gap-1 text-emerald-600 text-sm">
-                  <ArrowUpRight className="h-4 w-4" />
-                  <span>+18.2%</span>
+                <p className="text-2xl font-bold">{overview.visitors.value.toLocaleString()}</p>
+                <div className={cn(
+                  "flex items-center gap-1 text-sm",
+                  overview.visitors.isPositive ? "text-emerald-600" : "text-red-600"
+                )}>
+                  {overview.visitors.isPositive ? (
+                    <ArrowUpRight className="h-4 w-4" />
+                  ) : (
+                    <ArrowDownRight className="h-4 w-4" />
+                  )}
+                  <span>{overview.visitors.isPositive ? '+' : ''}{overview.visitors.change}%</span>
                 </div>
               </div>
               <div className="p-3 rounded-lg bg-blue-100 text-blue-600">
@@ -133,10 +123,17 @@ export default function AnalyticsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">Conversions</p>
-                <p className="text-2xl font-bold">875</p>
-                <div className="flex items-center gap-1 text-emerald-600 text-sm">
-                  <ArrowUpRight className="h-4 w-4" />
-                  <span>+12.5%</span>
+                <p className="text-2xl font-bold">{overview.conversions.value.toLocaleString()}</p>
+                <div className={cn(
+                  "flex items-center gap-1 text-sm",
+                  overview.conversions.isPositive ? "text-emerald-600" : "text-red-600"
+                )}>
+                  {overview.conversions.isPositive ? (
+                    <ArrowUpRight className="h-4 w-4" />
+                  ) : (
+                    <ArrowDownRight className="h-4 w-4" />
+                  )}
+                  <span>{overview.conversions.isPositive ? '+' : ''}{overview.conversions.change}%</span>
                 </div>
               </div>
               <div className="p-3 rounded-lg bg-emerald-100 text-emerald-600">
@@ -151,10 +148,17 @@ export default function AnalyticsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">Avg. Order Value</p>
-                <p className="text-2xl font-bold">$158.50</p>
-                <div className="flex items-center gap-1 text-red-600 text-sm">
-                  <ArrowDownRight className="h-4 w-4" />
-                  <span>-3.2%</span>
+                <p className="text-2xl font-bold">${overview.avgOrderValue.value.toFixed(2)}</p>
+                <div className={cn(
+                  "flex items-center gap-1 text-sm",
+                  overview.avgOrderValue.isPositive ? "text-emerald-600" : "text-red-600"
+                )}>
+                  {overview.avgOrderValue.isPositive ? (
+                    <ArrowUpRight className="h-4 w-4" />
+                  ) : (
+                    <ArrowDownRight className="h-4 w-4" />
+                  )}
+                  <span>{overview.avgOrderValue.isPositive ? '+' : ''}{overview.avgOrderValue.change}%</span>
                 </div>
               </div>
               <div className="p-3 rounded-lg bg-purple-100 text-purple-600">
@@ -169,10 +173,17 @@ export default function AnalyticsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">Bounce Rate</p>
-                <p className="text-2xl font-bold">42.3%</p>
-                <div className="flex items-center gap-1 text-emerald-600 text-sm">
-                  <ArrowUpRight className="h-4 w-4" />
-                  <span>-5.1%</span>
+                <p className="text-2xl font-bold">{overview.bounceRate.value}%</p>
+                <div className={cn(
+                  "flex items-center gap-1 text-sm",
+                  overview.bounceRate.isPositive ? "text-emerald-600" : "text-red-600"
+                )}>
+                  {overview.bounceRate.isPositive ? (
+                    <ArrowUpRight className="h-4 w-4" />
+                  ) : (
+                    <ArrowDownRight className="h-4 w-4" />
+                  )}
+                  <span>{overview.bounceRate.isPositive ? '+' : ''}{overview.bounceRate.change}%</span>
                 </div>
               </div>
               <div className="p-3 rounded-lg bg-amber-100 text-amber-600">
@@ -192,7 +203,7 @@ export default function AnalyticsPage() {
           <CardContent>
             <div className="h-[300px]">
               <ResponsiveContainer width="100%" height="100%">
-                <AreaChart data={performanceData}>
+                <AreaChart data={performance}>
                   <defs>
                     <linearGradient id="colorVisitors" x1="0" y1="0" x2="0" y2="1">
                       <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.1} />
@@ -241,7 +252,7 @@ export default function AnalyticsPage() {
               <ResponsiveContainer width="100%" height="100%">
                 <RePieChart>
                   <Pie
-                    data={deviceData}
+                    data={devices}
                     cx="50%"
                     cy="50%"
                     innerRadius={60}
@@ -258,7 +269,7 @@ export default function AnalyticsPage() {
               </ResponsiveContainer>
             </div>
             <div className="flex justify-center gap-6 mt-4">
-              {deviceData.map((device) => (
+              {devices.map((device) => (
                 <div key={device.name} className="flex items-center gap-2">
                   <div
                     className="w-3 h-3 rounded-full"
@@ -283,7 +294,7 @@ export default function AnalyticsPage() {
           <CardContent>
             <div className="h-[300px]">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={browserData} layout="vertical">
+                <BarChart data={browsers} layout="vertical">
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis type="number" />
                   <YAxis dataKey="name" type="category" width={80} />

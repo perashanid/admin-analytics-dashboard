@@ -117,6 +117,12 @@ export const api = {
     const response = await apiClient.get('/activities');
     return response.data;
   },
+
+  // Analytics
+  getAnalytics: async (dateRange: DateRange = '12m') => {
+    const response = await apiClient.get('/analytics');
+    return response.data[dateRange];
+  },
 };
 
 export default apiClient;
