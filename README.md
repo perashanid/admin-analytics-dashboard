@@ -2,29 +2,30 @@
 
 A responsive, production-ready Admin Analytics Dashboard built with Next.js, TypeScript, Tailwind CSS, and Recharts. This dashboard visualizes business data using interactive charts and reusable UI components.
 
-![Dashboard Preview](./public/dashboard-preview.png)
+<img width="1919" height="1000" alt="image" src="https://github.com/user-attachments/assets/9779b890-5080-4d0a-ba21-065a31713d51" />
 
-## ✨ Features
 
-### 📊 Dashboard Overview
+## Features
+
+### Dashboard Overview
 - **4 KPI Cards** with real-time data and percentage change indicators:
   - Total Revenue: $54,230 (+12.5%)
   - Total Users: 1,245 (+8.2%)
   - Orders: 342 (-3.1%)
   - Conversion Rate: 4.3% (+1.2%)
 
-### 📈 Interactive Charts
+### Interactive Charts
 - **Revenue Over Time** (Line Chart) - Monthly data with tooltips
 - **Orders Per Month** (Bar Chart) - Animated loading
 - **User Distribution** (Pie Chart) - Free, Premium, Enterprise breakdown
 - **Traffic Source** (Pie Chart) - Organic, Paid, Social, Referral breakdown
 
-### 🎛️ Filters & Interactions
+### Filters & Interactions
 - Date range selector (Last 7 days, 30 days, 12 months)
 - User type filter (All, Free, Premium, Enterprise)
 - Real-time dashboard updates on filter changes
 
-### 🎨 UI/UX
+### UI/UX
 - **Responsive Design** - Works on desktop, tablet, and mobile
 - **Dark/Light Theme Toggle** - Persistent theme preference
 - **Collapsible Sidebar** - Smooth animations and transitions
@@ -32,18 +33,18 @@ A responsive, production-ready Admin Analytics Dashboard built with Next.js, Typ
 - **Error & Empty States** - Graceful handling of edge cases
 - **Hover Effects** - Micro-interactions throughout
 
-### ⚡ Performance
+### Performance
 - Memoized components to prevent unnecessary re-renders
 - Lazy loading of chart components
 - Responsive container for charts
 - Optimized bundle size
 
-### 🎯 Bonus Features
+### Bonus Features
 - **Export to CSV** - Download dashboard data
 - **Notification System** - Visual notification indicator
 - **User Profile Dropdown** - Quick access to settings
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: [Next.js 15](https://nextjs.org/) - React framework with App Router
 - **Language**: [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
@@ -54,7 +55,7 @@ A responsive, production-ready Admin Analytics Dashboard built with Next.js, Typ
 - **Mock API**: [JSON Server](https://github.com/typicode/json-server) - Fake REST API
 - **Icons**: [Lucide React](https://lucide.dev/) - Beautiful icons
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+ 
@@ -84,7 +85,7 @@ A responsive, production-ready Admin Analytics Dashboard built with Next.js, Typ
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 admin-analytics-dashboard/
@@ -133,7 +134,7 @@ admin-analytics-dashboard/
 └── README.md
 ```
 
-## 🏗️ Architecture Decisions
+## Architecture Decisions
 
 ### State Management
 - **Zustand** was chosen for its simplicity and minimal boilerplate compared to Redux
@@ -160,7 +161,7 @@ admin-analytics-dashboard/
 - Responsive containers prevent layout shifts
 - Skeleton loading states improve perceived performance
 
-## 🔌 API Endpoints
+## API Endpoints
 
 The mock API provides the following endpoints:
 
@@ -172,7 +173,7 @@ The mock API provides the following endpoints:
 | `GET /users` | User distribution |
 | `GET /traffic` | Traffic sources |
 
-## 🧪 Scripts
+## Scripts
 
 | Command | Description |
 |---------|-------------|
@@ -181,13 +182,6 @@ The mock API provides the following endpoints:
 | `npm run start` | Start production server |
 | `npm run lint` | Run ESLint |
 | `npm run server` | Start JSON Server only |
-
-## 🚢 Deployment
-
-### Vercel (Recommended)
-1. Push to GitHub
-2. Import project on [Vercel](https://vercel.com)
-3. Deploy automatically
 
 ### Environment Variables
 For production deployment, set:
