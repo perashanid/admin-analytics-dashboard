@@ -2,80 +2,104 @@
   "stats": {
     "7d": {
       "all": {
-        "totalRevenue": { "value": 8450, "change": 15.3, "isPositive": true },
-        "totalUsers": { "value": 89, "change": 12.1, "isPositive": true },
-        "orders": { "value": 45, "change": 8.5, "isPositive": true },
-        "conversionRate": { "value": 5.2, "change": 2.1, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 8450, "change": 15.3, "isPositive": true },
+          "totalUsers": { "value": 89, "change": 12.1, "isPositive": true },
+          "orders": { "value": 45, "change": 8.5, "isPositive": true },
+          "conversionRate": { "value": 5.2, "change": 2.1, "isPositive": true }
+        }
       },
       "free": {
-        "totalRevenue": { "value": 0, "change": 0, "isPositive": true },
-        "totalUsers": { "value": 58, "change": 18.2, "isPositive": true },
-        "orders": { "value": 0, "change": 0, "isPositive": true },
-        "conversionRate": { "value": 0, "change": 0, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 0, "change": 0, "isPositive": true },
+          "totalUsers": { "value": 58, "change": 18.2, "isPositive": true },
+          "orders": { "value": 0, "change": 0, "isPositive": true },
+          "conversionRate": { "value": 0, "change": 0, "isPositive": true }
+        }
       },
       "premium": {
-        "totalRevenue": { "value": 5890, "change": 14.8, "isPositive": true },
-        "totalUsers": { "value": 24, "change": 9.1, "isPositive": true },
-        "orders": { "value": 32, "change": 11.2, "isPositive": true },
-        "conversionRate": { "value": 6.8, "change": 3.2, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 5890, "change": 14.8, "isPositive": true },
+          "totalUsers": { "value": 24, "change": 9.1, "isPositive": true },
+          "orders": { "value": 32, "change": 11.2, "isPositive": true },
+          "conversionRate": { "value": 6.8, "change": 3.2, "isPositive": true }
+        }
       },
       "enterprise": {
-        "totalRevenue": { "value": 2560, "change": 16.5, "isPositive": true },
-        "totalUsers": { "value": 7, "change": 0, "isPositive": true },
-        "orders": { "value": 13, "change": 8.3, "isPositive": true },
-        "conversionRate": { "value": 7.5, "change": 1.8, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 2560, "change": 16.5, "isPositive": true },
+          "totalUsers": { "value": 7, "change": 0, "isPositive": true },
+          "orders": { "value": 13, "change": 8.3, "isPositive": true },
+          "conversionRate": { "value": 7.5, "change": 1.8, "isPositive": true }
+        }
       }
     },
     "30d": {
       "all": {
-        "totalRevenue": { "value": 32180, "change": 10.5, "isPositive": true },
-        "totalUsers": { "value": 342, "change": 7.8, "isPositive": true },
-        "orders": { "value": 178, "change": 5.2, "isPositive": true },
-        "conversionRate": { "value": 4.8, "change": 1.5, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 32180, "change": 10.5, "isPositive": true },
+          "totalUsers": { "value": 342, "change": 7.8, "isPositive": true },
+          "orders": { "value": 178, "change": 5.2, "isPositive": true },
+          "conversionRate": { "value": 4.8, "change": 1.5, "isPositive": true }
+        }
       },
       "free": {
-        "totalRevenue": { "value": 0, "change": 0, "isPositive": true },
-        "totalUsers": { "value": 215, "change": 12.3, "isPositive": true },
-        "orders": { "value": 0, "change": 0, "isPositive": true },
-        "conversionRate": { "value": 0, "change": 0, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 0, "change": 0, "isPositive": true },
+          "totalUsers": { "value": 215, "change": 12.3, "isPositive": true },
+          "orders": { "value": 0, "change": 0, "isPositive": true },
+          "conversionRate": { "value": 0, "change": 0, "isPositive": true }
+        }
       },
       "premium": {
-        "totalRevenue": { "value": 22340, "change": 9.8, "isPositive": true },
-        "totalUsers": { "value": 98, "change": 6.5, "isPositive": true },
-        "orders": { "value": 125, "change": 7.1, "isPositive": true },
-        "conversionRate": { "value": 6.2, "change": 2.3, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 22340, "change": 9.8, "isPositive": true },
+          "totalUsers": { "value": 98, "change": 6.5, "isPositive": true },
+          "orders": { "value": 125, "change": 7.1, "isPositive": true },
+          "conversionRate": { "value": 6.2, "change": 2.3, "isPositive": true }
+        }
       },
       "enterprise": {
-        "totalRevenue": { "value": 9840, "change": 11.2, "isPositive": true },
-        "totalUsers": { "value": 29, "change": 3.6, "isPositive": true },
-        "orders": { "value": 53, "change": 4.8, "isPositive": true },
-        "conversionRate": { "value": 7.1, "change": 1.9, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 9840, "change": 11.2, "isPositive": true },
+          "totalUsers": { "value": 29, "change": 3.6, "isPositive": true },
+          "orders": { "value": 53, "change": 4.8, "isPositive": true },
+          "conversionRate": { "value": 7.1, "change": 1.9, "isPositive": true }
+        }
       }
     },
     "12m": {
       "all": {
-        "totalRevenue": { "value": 354230, "change": 12.5, "isPositive": true },
-        "totalUsers": { "value": 1245, "change": 8.2, "isPositive": true },
-        "orders": { "value": 842, "change": -3.1, "isPositive": false },
-        "conversionRate": { "value": 4.3, "change": 1.2, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 354230, "change": 12.5, "isPositive": true },
+          "totalUsers": { "value": 1245, "change": 8.2, "isPositive": true },
+          "orders": { "value": 842, "change": -3.1, "isPositive": false },
+          "conversionRate": { "value": 4.3, "change": 1.2, "isPositive": true }
+        }
       },
       "free": {
-        "totalRevenue": { "value": 0, "change": 0, "isPositive": true },
-        "totalUsers": { "value": 650, "change": 15.8, "isPositive": true },
-        "orders": { "value": 0, "change": 0, "isPositive": true },
-        "conversionRate": { "value": 0, "change": 0, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 0, "change": 0, "isPositive": true },
+          "totalUsers": { "value": 650, "change": 15.8, "isPositive": true },
+          "orders": { "value": 0, "change": 0, "isPositive": true },
+          "conversionRate": { "value": 0, "change": 0, "isPositive": true }
+        }
       },
       "premium": {
-        "totalRevenue": { "value": 245890, "change": 11.3, "isPositive": true },
-        "totalUsers": { "value": 420, "change": 5.7, "isPositive": true },
-        "orders": { "value": 589, "change": -2.8, "isPositive": false },
-        "conversionRate": { "value": 5.8, "change": 1.8, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 245890, "change": 11.3, "isPositive": true },
+          "totalUsers": { "value": 420, "change": 5.7, "isPositive": true },
+          "orders": { "value": 589, "change": -2.8, "isPositive": false },
+          "conversionRate": { "value": 5.8, "change": 1.8, "isPositive": true }
+        }
       },
       "enterprise": {
-        "totalRevenue": { "value": 108340, "change": 14.2, "isPositive": true },
-        "totalUsers": { "value": 175, "change": 3.2, "isPositive": true },
-        "orders": { "value": 253, "change": -4.5, "isPositive": false },
-        "conversionRate": { "value": 6.5, "change": 0.9, "isPositive": true }
+        "kpi": {
+          "totalRevenue": { "value": 108340, "change": 14.2, "isPositive": true },
+          "totalUsers": { "value": 175, "change": 3.2, "isPositive": true },
+          "orders": { "value": 253, "change": -4.5, "isPositive": false },
+          "conversionRate": { "value": 6.5, "change": 0.9, "isPositive": true }
+        }
       }
     }
   },
@@ -235,29 +259,7 @@
     { "source": "Paid", "value": 25, "color": "#f59e0b" },
     { "source": "Social", "value": 20, "color": "#3b82f6" },
     { "source": "Referral", "value": 10, "color": "#8b5cf6" }
-  ]
-}
-,
-  "usersList": [
-    {
-      "id": "1",
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "role": "Admin",
-      "status": "Active",
-      "plan": "Enterprise",
-      "lastActive": "2024-02-10T10:30:00Z",
-      "avatar": "JD"
-    },
-    {
-      "id": "2",
-      "name": "Jane Smith",
-      "email": "jane.smith@example.com",
-      "role": "Manager",
-      "status": "Active",
-      "plan": "Premium",
- 
-,
+  ],
   "usersList": [
     {
       "id": "1",
